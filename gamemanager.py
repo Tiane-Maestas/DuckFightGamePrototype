@@ -18,6 +18,9 @@ class Duck:
         if self.action_step >= Duck.ACTION_READY:
             self.action_step = 0
             # Perform card actions here.
+            # ideas: have a list of cards that ducks hold
+            # and 'play' the corresponing card here.
+            # will need the cards to manage themselves from here on out.
             otherDuck.hp -= self.damage
     
     def dead(self):
